@@ -7,7 +7,12 @@ const Login = ({navigation}) => {
       <Text>Login</Text>
       <TouchableOpacity
         onPress={() => {
-          navigation.navigate('BottomNavigator', {screen: 'Create'});
+          navigation.navigate('BottomNavigator', {
+            screen: 'Home',
+            params: {
+              id: 1,
+            },
+          });
         }}>
         <Text>Home</Text>
       </TouchableOpacity>
